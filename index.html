@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            
+         /*Holds all image options in one container*/
+        .bigcontainer
+            {
+               object-position: right;
+               margin-top: -220px;
+            }
+        
+            /*Overlay container*/
+        .container {
+            position: relative;
+            left: 1100px;
+            max-width: 300px;
+            margin-bottom: 30px;
+        }
+            /*image container*/
+        .container img {
+            border-radius: 50%;
+            width: auto;
+            height: auto;
+        }
+        
+        /*button specs*/
+        .container .btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        /*button color*/
+        .container .btn:hover {
+            background-color: black;
+        }
+          
+        /*overlay specs*/ 
+            .overlay {
+          border-radius: 50%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          transition: .5s ease;
+          background-color: mediumseagreen;
+        }
+            
+        /*Overlay opacity*/
+        .container:hover .overlay {
+          opacity: .7;
+        }
+        
+        /*Patriot web title*/
+        h1
+        {
+            font-size: 100px;
+            color:darkgreen;
+            margin-left: 100px;
+        }
+         
+        /*background*/
+        body 
+            {
+                background-image:url("images/background.jpg");
+                /*background-size: 100% 100%;*/
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+        </style>
+    </head>
+    
+<body>
+     <h1>Patriot Web</h1>
+    <div class= "bigcontainer">
+        <div class="container">
+          <img src="images/personalinformation.jpg" alt="PI" style="width:300px">
+            <div class = "overlay">
+                <button class="btn">Personal Information</button>
+            </div>
+        </div>
+
+        <div class="container">
+          <img src="images/studentservices.jpg" alt="SS" style="width:300px">
+            <div class = "overlay">
+                <button class="btn">Student Services</button>
+            </div>
+        </div>
+
+        <div class="container">
+          <img src="images/financialaid.jpg" alt="FA" style="width:300px">
+            <div class = "overlay">
+                <button class="btn">Financial Aid</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
