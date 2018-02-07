@@ -2,227 +2,227 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title></title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
 
-	body{
-		background-color:white;
-	}
-	
-	.navbar-brand{
-		padding:0;
-		margin-left:5px;
-		height:100%
-	}
+        body {
+            background-color: white;
+        }
 
-	.navbar{
-		background-color: #006633;
-		margin-bottom: 0px;
-		border-radius: 0;
-		border-color:#006633;
-		min-height:40px;
-		color:white;
-		font-size: 16px;
-	}
+        .navbar-brand {
+            padding: 0;
+            margin-left: 5px;
+            height: 100%
+        }
 
-	.nav-item a{
-		color:white;
-	}
+        .navbar {
+            background-color: #006633;
+            margin-bottom: 0px;
+            border-radius: 0;
+            border-color: #006633;
+            min-height: 40px;
+            color: white;
+            font-size: 16px;
+        }
 
-	.navbar-brand img
-	{
-		max-height: 100%;
-	}
+        .nav-item a {
+            color: white;
+        }
 
-	.nav-tabs > li, .nav-pills > li {
-		float:none;
-		display:inline-block;		
-	}
+        .navbar-brand img {
+            max-height: 100%;
+        }
 
-	.nav-pills{ text-align: center;}
+        .nav-tabs > li, .nav-pills > li {
+            float: none;
+            display: inline-block;
+        }
 
-	.nav-tabs {
-		text-align:center;
-	}
+        .nav-pills {
+            text-align: center;
+        }
 
-	.nav > li > a:focus, .nav > li > a:hover{
-		background-color:#FFCC33;
-		text-decoration: none;
-	}
+        .nav-tabs {
+            text-align: center;
+        }
 
-	.main{
-		background-image: url('images/masonBackground.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		margin-right: 0px;
-		height:800px;
-	}
+        .nav > li > a:focus, .nav > li > a:hover {
+            background-color: #FFCC33;
+            text-decoration: none;
+        }
 
-	.logo{
-		position:absolute;
-		z-index:1000;
-		margin-left:15px;
-	}
+        .main {
+            background-image: url('images/masonBackground.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 0px;
+            height: 800px;
+        }
 
-	 /*Overlay container*/
-	 .image-container {
-		position: relative;
-		margin-bottom: 30px;
-		margin-top:30px;
-		text-align:center;
-		font-size:18px;
-		font-weight: 200;
-	}
+        .logo {
+            position: absolute;
+            z-index: 1000;
+            margin-left: 15px;
+        }
 
-	/*Overlay opacity*/
-	.image-container .overlay:hover {
-		opacity: .7;
-	}
-        
-	/*image container*/
-    .image-container img {
-        border-radius: 50%;
-		width:200px;
-		border: 0px solid rgb(248, 248, 127);
-    }
-        
-    /*button specs*/
-    .image-container .btn {
-        position: absolute;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        background-color: #555;
-        color: white;
-        font-size: 16px;
-        padding: 12px 24px;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        text-align: center;
-    }
-        
-    /*button color*/
-    .image-container img:hover {
-		border: 3px solid rgb(248, 248, 127); 
-		transition: border .05s ease;
-	} 
-    
-          
-    /*overlay specs*/ 
-	.overlay {
-        border-radius: 50%;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-        background-color: #FFCC33;
-    }
-	
-	.picture-label{
-		text-align: center;
-	}
+        /*Overlay container*/
+        .image-container {
+            position: relative;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: 200;
+        }
 
-	footer{
-		background-color: #006633;
-		text-align: center;
-		color:white
-	}
+        /*Overlay opacity*/
+        .image-container .overlay:hover {
+            opacity: .7;
+        }
 
-	.searchDiv{
-		float: right !important;
-		color:black;
-	}
+        /*image container*/
+        .image-container img {
+            border-radius: 50%;
+            width: 200px;
+            border: 0px solid rgb(248, 248, 127);
+        }
 
-	.searchDiv button{
-		cursor: not-allowed;
-	}
+        /*button specs*/
+        .image-container .btn {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            background-color: #555;
+            color: white;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-	.greeting{
-		color:#FFCC33; 
-		font-family:Script MT Bold;
-	}
+        /*button color*/
+        .image-container img:hover {
+            border: 3px solid rgb(248, 248, 127);
+            transition: border .05s ease;
+        }
 
-	</style>
+        /*overlay specs*/
+        .overlay {
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #FFCC33;
+        }
+
+        .picture-label {
+            text-align: center;
+        }
+
+        footer {
+            background-color: #006633;
+            text-align: center;
+            color: white
+        }
+
+        .searchDiv {
+            float: right !important;
+            color: black;
+        }
+
+        .searchDiv button {
+            cursor: not-allowed;
+        }
+
+        .greeting {
+            color: #FFCC33;
+            font-family: Script MT Bold;
+        }
+
+    </style>
 </head>
 <body>
 <!-- Logo -->
-<a class="logo" href="#"><img src="images/navLogo.png"></a> 
+<a class="logo" href="#"><img src="images/navLogo.png"></a>
 <!-- First navbar, has contact, logout, and welcome -->
 <nav class="navbar navbar-default" role="navigation">
-	<div class="container-fluid">
-	  <div class="navbar-header">
-	  </div>
-	  <ul class="nav navbar-right" style="margin-right: 20px">
-		  <span class=>Contact us | </span><a href="#">Logout</a>
-		  <div>Welcome [Name]!</div>
-	  </ul>
-	</div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+        </div>
+        <ul class="nav navbar-right" style="margin-right: 20px">
+            <span class=>Contact us | </span><a href="#">Logout</a>
+            <div>Welcome [Name]!</div>
+        </ul>
+    </div>
 </nav>
 <!-- 2nd navbar under first, used for links and search -->
 <nav class="navbar navbar-default" role="navigation">
-		<div class="container-fluid">
-	  <ul class="nav navbar nav-pills">
-	  <li class="nav-item"><a href="#">Register for Classes</a></li>
-	  <li class="nav-item"><a href="#">Account Details</a></li>
-	  <li class="nav-item"><a href="#">View Schedule</a></li>
-	  <li class="nav-item"><a href="#">Purchase Textbooks</a></li>
-	  <li class="searchDiv"><input type="text" placeholder="Search.." name="search">
-		<button type="submit" disabled="disabled"><i class="fa fa-search"></i></button></li>
-	  </ul>	  
-  </div>
+    <div class="container-fluid">
+        <ul class="nav navbar nav-pills">
+            <li class="nav-item"><a href="#">Register for Classes</a></li>
+            <li class="nav-item"><a href="#">Account Details</a></li>
+            <li class="nav-item"><a href="#">View Schedule</a></li>
+            <li class="nav-item"><a href="#">Purchase Textbooks</a></li>
+            <li class="searchDiv"><input type="text" placeholder="Search.." name="search">
+                <button type="submit" disabled="disabled"><i class="fa fa-search"></i></button>
+            </li>
+        </ul>
+    </div>
 </nav>
 <!-- Main body -->
 <div class="row main">
-	<div class="col col-md-6 col col-md-offset-6">
-		<div class="row greeting">
-			<span style="font-size: 54px;">Welcome to Patriot Web!</span>
-			<br/>
-			<span style="font-size: 18px; margin-left:10%">A self-service website for students, faculty, and staff<span>
-		</div>
-	</div>
-	<div class="col col-md-7 col-md-offset-5">
-		<div class="image-container">
-			<div class="col col-md-4">
-					<a href="#"><img src="images/personalinformation.jpg" ></a>
-					<!-- <div class = "overlay">						
-						<button class="btn">Personal Information</button>
-					</div> -->
-					<div class="picture-label">Personal Information</div>
-				</div>		  
-				<div class="col col-md-4">
-					<a href="#"><img src="images/studentservices.jpg" alt="SS"></a>
-					<!-- <div class = "overlay">
-						<button class="btn">Student Services</button>
-					</div> -->
-					<div class="picture-label">Student Services</div>
-				</div>	
-				<div class="col col-md-4">
-					<a href="#"><img src="images/financialaid.jpg" alt="FA"></a>
-					<!-- <div class = "overlay">
-						<button class="btn">Financial Aid</button>
-					</div> -->
-					<div class="picture-label">Financial Aid</div>
-				</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<footer class="page-footer center-on-small-only">
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col col-md-12">
-					Footer
-				</div>
-			</div>
-		</div>
-	</footer>
+    <div class="col col-md-6 col col-md-offset-6">
+        <div class="row greeting">
+            <span style="font-size: 54px;">Welcome to Patriot Web!</span>
+            <br/>
+            <span style="font-size: 18px; margin-left:10%">A self-service website for students, faculty, and staff</span>
+        </div>
+    </div>
+    <div class="col col-md-7 col-md-offset-5">
+        <div class="image-container">
+            <div class="col col-md-4">
+                <a href="#"><img src="images/personalinformation.jpg"></a>
+                <!-- <div class = "overlay">
+                    <button class="btn">Personal Information</button>
+                </div> -->
+                <div class="picture-label">Personal Information</div>
+            </div>
+            <div class="col col-md-4">
+                <a href="#"><img src="images/studentservices.jpg" alt="SS"></a>
+                <!-- <div class = "overlay">
+                    <button class="btn">Student Services</button>
+                </div> -->
+                <div class="picture-label">Student Services</div>
+            </div>
+            <div class="col col-md-4">
+                <a href="#"><img src="images/financialaid.jpg" alt="FA"></a>
+                <!-- <div class = "overlay">
+                    <button class="btn">Financial Aid</button>
+                </div> -->
+                <div class="picture-label">Financial Aid</div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="page-footer center-on-small-only">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col col-md-12">
+                Footer
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
