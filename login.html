@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/scripts/login.js"></script>
     <style>
 
         body {
@@ -50,22 +51,6 @@
         }
 
     </style>
-    <script>
-        $(document).ready(function(){
-            //Submit button click            
-            $('.submit-button').click(function login(){
-                var d = new Date();
-                //Expires in 24 hours
-                expireDate = new Date(d.getTime() + (24*60*60*1000)) 
-                var userName =  $('#inputUsername').val();
-                //Stringify login object and store in Local Storage (LS)
-                var login = {signedIn: true, userName: userName, expireDate: expireDate};
-                localStorage.setItem("login", JSON.stringify(login));
-                //Redirect to index
-                window.location.href = "index.html";
-            });
-        });
-    </script>
 </head>
 <body>
     <!-- Main body -->
