@@ -1,8 +1,8 @@
+//** Uncomment this line to clear localStorage */
+//localStorage.clear();
+authenticate();
  $(document).ready(function(){
-     //** Uncomment this line to clear localStorage */
-     //localStorage.clear();
-    authenticate();
-
+    
     $('#logOut').click(logOut);
 });
 
@@ -19,7 +19,6 @@ function authenticate()
     {
         window.location.href = "login.html";
     }
-    $('#userName').text(login.userName)
 }
 
 function logOut(){
