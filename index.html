@@ -1,254 +1,109 @@
-﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title></title>
+    <title>Patriot Web</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="javascript/scripts/index.js"></script>
+<!--    Style of social media Icons (had to take them out from separate css bc of malfunctioning-->
     <style>
-
-        body {
-            background-color: white;
+        .fa {
+          padding: 20px;
+        padding-right: 40px;
+          font-size: 25px;
+          width: 50px;
+          text-align: left;
+          text-decoration: none;
+          margin: 5px 4px;
         }
 
-        .navbar-brand {
-            padding: 0;
-            margin-left: 5px;
-            height: 100%
+        .fa:hover {
+            opacity: 0.7;
         }
-
-        .navbar {
-            background-color: #006633;
-            margin-bottom: 0px;
-            border-radius: 0;
-            border-color: #006633;
-            min-height: 40px;
-            color: white;
-            font-size: 16px;
-        }
-
-        .nav-item a {
-            color: white;
-        }
-
-        .navbar-brand img {
-            max-height: 100%;
-        }
-
-        .nav-tabs > li, .nav-pills > li {
-            float: none;
-            display: inline-block;
-        }
-
-        .nav-pills {
-            text-align: center;
-        }
-
-        .nav-tabs {
-            text-align: center;
-        }
-
-        .nav > li > a:focus, .nav > li > a:hover {
-            background-color: #FFCC33;
-            text-decoration: none;
-        }
-
-        .main {
-            background-image: url('images/masonBackground.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            margin-right: 0px;
-            height: 800px;
-        }
-
-        .logo {
-            position: absolute;
-            z-index: 1000;
-            margin-left: 15px;
-        }
-
-        /*Overlay container*/
-        .image-container {
-            position: relative;
-            margin-bottom: 30px;
-            margin-top: 10%;
-            text-align: center;
-            font-size: 18px;
-            font-weight: 200;
-        }
-
-        /*Overlay opacity*/
-        .image-container .overlay:hover {
-            opacity: .7;
-        }
-
-        /*image container*/
-        .image-container img {
-            border-radius: 50%;
-            width: 200px;
-            border: 0px solid rgb(248, 248, 127);
-        }
-
-        /*button specs*/
-        .image-container .btn {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            background-color: #555;
-            color: white;
-            font-size: 16px;
-            padding: 12px 24px;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        /*button color*/
-        .image-container img:hover {
-            border: 3px solid rgb(248, 248, 127);
-            transition: border .05s ease;
-        }
-
-        /*overlay specs*/
-        .overlay {
-            border-radius: 50%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: #FFCC33;
-        }
-
-        .picture-label {
-            text-align: center;
-        }
-
-        footer {
-            background-color: #006633;
-            text-align: center;
-            color: white
-        }
-
-        .searchDiv {
-            float: right !important;
-            color: black;
-        }
-
-        .searchDiv button {
-            cursor: not-allowed;
-        }
-
-        .greeting {
-            color: #FFCC33;
-            /* font-family:"Brush Script MT Bold", cursive; */
-            font-family: URW Chancery L, cursive;
-            text-align: right;
-            margin-right: 5%;
-        }
-
     </style>
-
-    <script>
-        $(document).ready(function(){
-            authenticate();
-        })
-
-        //Check to see if user is authenticated. If not redirect to login.html
-        //Authentication uses local storage, login token expires after 24 hours
-        function authenticate()
-        {
-            var now = new Date();
-            //Get login obj from local storage
-            var login = JSON.parse(localStorage.getItem('login')); 
-            //Check if login is null, if signedIn is false, and if login has expired (24 hours)
-            //If any are true, redirect to login
-            if(!login || login.signedIn == false || now > new Date(login.expireDate)) 
-            {
-                window.location.href = "login.html";
-            }
-            $('#userName').text(login.userName)
-        }
-    </script>
 </head>
 <body>
-<!-- Logo -->
-<a class="logo" href="#"><img src="images/navLogo.png"></a>
-<!-- First navbar, has contact, logout, and welcome -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header">
-        </div>
-        <ul class="nav navbar-right" style="margin-right: 20px">
-            <span class=>Contact us | </span><a href="#">Logout</a>
-            <div>Welcome <span id="userName"></span></div>
-        </ul>
-    </div>
-</nav>
-<!-- 2nd navbar under first, used for links and search -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <ul class="nav navbar nav-pills">
-            <li class="nav-item"><a href="register.html">Register for Classes</a></li>
-            <li class="nav-item"><a href="#">Account Details</a></li>
-            <li class="nav-item"><a href="#">View Schedule</a></li>
-            <li class="nav-item"><a href="#">Purchase Textbooks</a></li>
-            <li class="searchDiv"><input type="text" placeholder="Search.." name="search">
-                <button type="submit" disabled="disabled"><i class="fa fa-search"></i></button>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- Main body -->
-<div class="row main">
-    <div class="col col-md-6 col col-md-offset-6">
-        <div class="row greeting">
-            <div style="font-size: 54px;">Welcome to Patriot Web!</div>
-            <div style="font-size: 18px; margin-left:10%">a self-service website for students, faculty, and staff</div>
-        </div>
-    </div>
-    <div class="col col-md-8 col-md-offset-4">
-        <div class="image-container">
-            <div class="col col-md-4">
-                <a href="#"><img src="images/personalinformation.jpg"></a>
-                <!-- <div class = "overlay">
-                    <button class="btn">Personal Information</button>
-                </div> -->
-                <div class="picture-label">Personal Information</div>
+        <nav class="navbar navbar-inverse">
+            <header>
+                <a class="logo gmu" href="index.html"><img src="images/newLogo.jpg" height="90px"></a> 
+            </header>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                        
+                  </button>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav">
+                    <li><a href="register.html">Register For Classes</a></li>
+                    <li><a href="accountdetails.html">Account Details</a></li>
+                    <li><a href="schedule.html">View Schedule</a></li>
+                    <li><a href="http://gmu.bncollege.com/webapp/wcs/stores/servlet/TBWizardView?catalogId=10001&langId=-1&storeId=15552">Purchase Textbooks</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                    <li><a id ="logOut" href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+                  </ul>
+                </div>
+             </div>
+            </nav>
+
+        <div class="container-fluid text-center">    
+          <div class="row content">
+            <div class="row main">
+                    <h1>Welcome To PatriotWeb!</h1>
+                    <h4>a self-service website for students, faculty, and staff</h4>
+                          <div class="col col-md-8 col-md-offset-4">
+                            <div class="image-container">
+                            <div class="col col-md-4">
+                                <a href="personalinformation.html"><img src="images/personalinformation.jpg" ></a>
+                                <!-- <div class = "overlay">						
+                                    <button class="btn">Personal Information</button>
+                                </div> -->
+                                <div class="picture-label">Personal Information</div>
+                            </div>		  
+                            <div class="col col-md-4">
+                                <a href="studentservices.html"><img src="images/studentservices.jpg" alt="SS"></a>
+                                <!-- <div class = "overlay">
+                                    <button class="btn">Student Services</button>
+                                </div> -->
+                                <div class="picture-label">Student Services</div>
+                            </div>	
+                            <div class="col col-md-4">
+                                <a href="financialaid.html"><img src="images/financialaid.jpg" alt="FA"></a>
+                                <!-- <div class = "overlay">
+                                    <button class="btn">Financial Aid</button>
+                                </div> -->
+                                <div class="picture-label">Financial Aid</div>
+                            </div>
+                        </div>
+                </div>
+                </div>
             </div>
-            <div class="col col-md-4">
-                <a href="#"><img src="images/studentservices.jpg" alt="SS"></a>
-                <!-- <div class = "overlay">
-                    <button class="btn">Student Services</button>
-                </div> -->
-                <div class="picture-label">Student Services</div>
-            </div>
-            <div class="col col-md-4">
-                <a href="#"><img src="images/financialaid.jpg" alt="FA"></a>
-                <!-- <div class = "overlay">
-                    <button class="btn">Financial Aid</button>
-                </div> -->
-                <div class="picture-label">Financial Aid</div>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
-<footer class="page-footer center-on-small-only">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col col-md-12">
-                Footer
-            </div>
-        </div>
-    </div>
-</footer>
+          </div>
+    <footer class="container-fluid">
+        <div id="footer">
+            <p class="address">
+                2018 George Mason University
+                <br>
+                4400 University Drive Fairfax, Virginia 22030
+                <br>
+                Phone:703-993-1000
+            </p>
+            <a href="https://www.facebook.com/georgemason" class="fa fa-facebook social"></a>
+            <a href="https://twitter.com/georgemasonu" class="fa fa-twitter social"></a>
+            <a href="https://www.linkedin.com/school/george-mason-university/" class="fa fa-linkedin social"></a>
+            <a href="https://www.youtube.com/user/masonWeb" class="fa fa-youtube social"></a>
+            <a href="https://www.instagram.com/georgemasonu/" class="fa fa-instagram social"></a>
+            <a href="https://www.pinterest.com/georgemasonuniv/?autologin=true" class="fa fa-pinterest social"></a>
+        </div> 
+    </footer>
+
 </body>
 </html>

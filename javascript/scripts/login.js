@@ -13,7 +13,7 @@ function logIn(){
     var login = makeLoginObject(true, userName);
     localStorage.setItem("patriotWebLogin", JSON.stringify(login));
     //Redirect to index
-    window.location.href = "hompage.html";     
+    window.location.href = "index.html";     
 }
 
 /**
