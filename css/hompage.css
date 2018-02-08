@@ -108,7 +108,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		margin-right: 0px;
-		height:auto;
+		height:500px;
 	}
 
 	 /*Overlay container*/
@@ -157,3 +157,4 @@
   border: 1px solid black;
   padding: 2em;
 }
+
