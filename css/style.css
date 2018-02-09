@@ -167,3 +167,9 @@ body{
 		text-align: right;
 		margin-right:5%;
 	}
+
+/*menu style for class search*/
+
+.ui-menu {
+    width: 150px;
+}
