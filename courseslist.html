@@ -4,26 +4,39 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="menu.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/scripts/register.js"></script>
+    <script src="javascript/scripts/classdatabase.js"></script>
 </head>
     
 <body>
 
-    <h2>Subjects</h2>
+        <input type="text" id="myInput"  placeholder="Search for fields.." title="Type in a field">
 
-    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for fields.." title="Type in a field">
 
-    <ul id="myUL">
-      <li><a href="#">Accounting &#91;ACCT&#93;</a></li>
+    <div id="subjectSection"> 
+        <h2>Subjects</h2>
+
+        <ul id="searchList" class="subjects">
+    </div>
+</br>
+    <div id="coursesSection" style="display: none"> 
+
+        <a href="#" id="backToSubjects">back</a>
+        <h2>Courses</h2>
+        <ul id="searchList" class="courses">
+    </div>
+
+      <!-- <li><a href="#">Accounting &#91;ACCT&#93;</a></li>
       <li><a href="#">African &amp; African-American Studies &#91;AFAM&#93;</a></li>
       <li><a href="#">Anthropology &#91;ANTH&#93;</a></li>
       <li><a href="#">Applied Information Technology &#91;AIT&#93;</a></li>
 
       <li><a href="#">Arabic &#91;ARAB&#93;</a></li>
       <li><a href="#">Art History &#91;ARTH&#93;</a></li>
-      <li><a href="#">Art and Visual Technology &#91;AVT&#93;</a></li>
+      <li><a href="#">Art and Visual Technology &#91;AVT&#93;</a></li> -->
     </ul>
 </body>
     

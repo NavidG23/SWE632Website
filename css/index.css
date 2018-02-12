@@ -240,13 +240,13 @@
   margin-bottom: 12px;
 }
 
-#myUL {
+#searchList {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-#myUL li a {
+#searchList li a {
   border: 1px solid #ddd;
   margin-top: -1px; /* Prevent double borders */
   background-color: #f6f6f6;
@@ -257,6 +257,6 @@
   display: block
 }
 
-#myUL li a:hover:not(.header) {
+#searchList li a:hover:not(.header) {
   background-color: #eee;
 }
