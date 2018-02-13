@@ -25,3 +25,14 @@ function logOut(){
     localStorage.setItem("patriotWebLogin", null);
     window.location.href = "login.html";
 }
+
+//Schedule funtion showing tables
+
+$(function () { 
+    $("#Select").show();
+
+    $("#select01").on("change", function () {
+        $(".myClass").hide();
+        $("div[id='" + $(this).val() + "']").show();
+    });
+});
