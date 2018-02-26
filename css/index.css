@@ -265,3 +265,7 @@ tr:nth-child(even) {
 {
     display: none;
 }
+
+#userName{
+    color:#9d9d9d;
+}
