@@ -13,6 +13,17 @@ $(document).ready(function(){
             $(".courses").append("<li class='courseListing' value='"+ courses[i].id + "' </li><a href='#'>"+ courses[i].name +"</a>");
         }          
     });
+    
+    $('.sectionsListing').click(function(){
+        var courses = getSectionsByCourseAndTerm($(this).val());
+        $('#subjectSection').hide();
+        $("#coursesSection").show();   
+        $("#coursesSelectionSection").show();
+        $(".courses").empty();
+        for(i in courses){
+            $(".courses").append("<li class='sectionsListing' value='"+ section[i].id + "' </li><a href='#'>"+ section[i].timeslot +"</a>");
+        }          
+    });
 
     $('#backToSubjects').click(function(){
         $(".courses").empty();

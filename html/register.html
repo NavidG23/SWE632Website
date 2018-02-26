@@ -81,7 +81,7 @@
                 <div class="col-md-1">
                 </div>
                 <div class="col-md-2">
-                    <div class="panel">
+                    <div class="termpanel">
                         <p>Select a term:</p>
                         <select class="form-control" style="width:80%">
                             <option>Fall 2018</option>
@@ -92,8 +92,8 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="panel">
-                        <input type="text" id="myInput"  placeholder="Search for fields.." title="Type in a field">      
+                    <div class="panel" style= "overflow-y: scroll;height 400px">
+                        <input type="text" id="myInput"  placeholder="Search for Subject..." title="Type in a field">      
                         <div id="subjectSection"> 
                             <h2>Subjects</h2>
                             <ul id="searchList" class="subjects">
@@ -107,8 +107,12 @@
                     </div>
                 </div>
                 <div class="col-md-5">
-                    <div class="panel">
-                        Table of all information on different sections being offered for semester
+                    <div class="panel" style= "overflow-y: scroll;height 400px">
+                        <div id="coursesSelectionSection" style="display: none"> 
+                            <a href="#" id="backToSubjects">back</a>
+                            <h2>Sections</h2>
+                            <ul id="searchList" class="subjects">
+                        </div>
                     </div>
                 </div>
             </div>
