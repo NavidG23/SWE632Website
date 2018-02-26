@@ -10,6 +10,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../javascript/scripts/authenticate.js"></script>
+    <script src="../javascript/scripts/register.js"></script>
+    <script src="../javascript/scripts/classdatabase.js"></script>
 
     <!--    Style of social media Icons (had to take them out from separate css bc of malfunctioning-->
     <style>
@@ -91,7 +93,17 @@
                 </div>
                 <div class="col-md-3">
                     <div class="panel">
-                        Table of available courses in semester here
+                        <input type="text" id="myInput"  placeholder="Search for fields.." title="Type in a field">      
+                        <div id="subjectSection"> 
+                            <h2>Subjects</h2>
+                            <ul id="searchList" class="subjects">
+                        </div>
+                        <br>
+                        <div id="coursesSection" style="display: none"> 
+                            <a href="#" id="backToSubjects">back</a>
+                            <h2>Courses</h2>
+                            <ul id="searchList" class="courses">
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-5">
