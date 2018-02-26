@@ -1,3 +1,7 @@
+body{
+    background-color: #006633;
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     margin-bottom: 0;
@@ -99,25 +103,19 @@ footer {
 }
 
 /*        Patriot web title*/
-h1 {
+.greetingHeader {
     font-size: 75px;
-    color: darkgreen;
-    margin-left: 450px;
     /*            font-family: URW Chancery L, cursive;*/
     font-family: "Brush Script MT Bold", cursive;
 }
 
 /*        Text under Patriot web title*/
-h4 {
-    font-size: 20px;
+.greetingMessage {
+    font-size: 25px;
     font-family: "Brush Script MT Bold", cursive;
-    color: darkgreen;
-    margin-left: 700px;
 }
 
-.main {
-    background: url("../images/masonBackground.png") no-repeat center center fixed;
-    background-size: cover;
+.main {   
     margin-right: 0px;
     height: 100%;
 }
@@ -125,6 +123,7 @@ h4 {
 .bg1 {
     height: 1500px;
     padding-bottom: 70px;
+    padding-top:150px; /*Needed for navbar-fixed-top*/
 }
 
 /*Overlay container*/
@@ -171,7 +170,6 @@ h4 {
 }
 
 .footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -268,4 +266,8 @@ tr:nth-child(even) {
 
 #userName{
     color:#9d9d9d;
+}
+
+.rowContent{
+    margin-top:30px;
 }
