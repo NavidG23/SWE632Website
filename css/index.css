@@ -1,5 +1,5 @@
 body{
-    background-color: #006633;
+    background-color: lightgray;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -53,13 +53,6 @@ footer {
     margin-bottom: 30px;
 }
 
-/*image container*/
-.container img {
-    border-radius: 50%;
-    width: auto;
-    height: auto;
-}
-
 /*        button specs*/
 .container .btn {
     position: absolute;
@@ -97,9 +90,23 @@ footer {
     background-color: mediumseagreen;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:transparent;
+}
+
+#textSS, #textFA, #textPI{
+
+}
+
 /*Overlay opacity*/
-.container:hover .overlay {
-    opacity: .7;
+#imgSS:hover,
+#imgFA:hover, 
+#imgPI:hover  {
+    opacity: .5;
 }
 
 /*        Patriot web title*/
@@ -121,7 +128,7 @@ footer {
 }
 
 .bg1 {
-    height: 1500px;
+    /* height: 1500px; */
     padding-bottom: 70px;
     padding-top:150px; /*Needed for navbar-fixed-top*/
 }
@@ -164,7 +171,7 @@ footer {
 }
 
 /*button color*/
-.image-container img:hover {
+.imageRow img:hover {
     border: 3px solid rgb(248, 248, 127);
     transition: border .05s ease;
 }
@@ -270,4 +277,23 @@ tr:nth-child(even) {
 
 .rowContent{
     margin-top:30px;
+}
+
+.imageRow{
+    margin-right:1em;
+    margin-left:1em;
+    margin-top:50px;
+}
+
+.imageDiv:hover > #textFA,
+.imageDiv:hover > #textSS,
+.imageDiv:hover > #textPI,
+{
+    color:black;
+}
+
+.selectionImg{
+    border-radius:50px;
+    width:100%;
+    margin-bottom:20px;
 }
