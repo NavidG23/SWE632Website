@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
     for(i in subject){
-        $(".subjects").append("<li class='subjectListing' value='"+ subject[i].id + "' </li><a href='#'>"+ subject[i].name +" ["+ subject[i].abbreviation + "]</a>");
+        $(".subjects").append("<li class='subjectListing searchItems' value='"+ subject[i].id + "' </li><a href='#'>"+ subject[i].name +" ["+ subject[i].abbreviation + "]</a>");
     } 
 
     $('.subjectListing').click(function(){
@@ -10,22 +10,26 @@ $(document).ready(function(){
         $("#coursesSection").show();        
         $(".courses").empty();
         for(i in courses){
-            $(".courses").append("<li class='courseListing' value='"+ courses[i].id + "' </li><a href='#'>"+ courses[i].name +"</a>");
-        }          
-    });
-    
-    $('.sectionsListing').click(function(){
-        var courses = getSectionsByCourseAndTerm($(this).val());
-        $('#subjectSection').hide();
-        $("#coursesSection").show();   
-        $("#coursesSelectionSection").show();
-        $(".courses").empty();
-        for(i in courses){
-            $(".courses").append("<li class='sectionsListing' value='"+ section[i].id + "' </li><a href='#'>"+ section[i].timeslot +"</a>");
-        }          
+            $(".courses").append("<li class='courseListing searchItems' value='"+ courses[i].id + "' </li><a href='#'>"+ courses[i].name +"</a>");
+        }
+        activeCourseListeners();          
     });
 
+    function activeCourseListeners(){
+        $('.courseListing').click(function(){
+            var sections = getSectionsByCourseAndTerm(parseInt($('#term').val()), $(this).val());
+            $('#subjectSection').hide();
+            $("#coursesSection").show();   
+            $("#coursesSelectionSection").show();
+            $(".sections").empty();
+            for(i in sections){
+                $(".sections").append("<li class='sectionsListing' value='"+ sections[i].id + "' </li><a href='#'>"+ sections[i].timeslot +"</a>");
+            }          
+        });
+    }
+
     $('#backToSubjects').click(function(){
+        $('.sections').empty();
         $(".courses").empty();
         $("#coursesSection").hide();
         $('#subjectSection').show();
@@ -40,7 +44,7 @@ $(document).ready(function(){
 function search(obj){
     
     var filter = obj.val().toUpperCase();
-    var items = $('li');
+    var items = $('li.searchItems');
     $.each(items, function(){
         var text = $(this).text().toUpperCase();
         if(text.indexOf(filter) > -1) {

@@ -23,19 +23,13 @@ function getCoursesForSubject(subjectId){
     return courses;
 }
 
-function getSectionsByCourseAndTerm(termId){
-    var subjects = [];
-    for(i in subjectTerm){
-        if(subjectTerm[i].termId == termId){
-            var subId = subjectTerm[i].subjectId
-            for(j in subject){
-                if(subject[j].id == subId){
-                    subjects.push(subject[j]);
-                }
-            }
-        }
+function getSectionsByCourseAndTerm(termId, courseId){
+    var sections = [];
+    for(i in section){
+        if(section[i].termId == termId && section[i].courseId == courseId)
+        sections.push(section[i]);
     }
-    return subjects;
+    return sections;
 }
 
 /**** JSON MOCK DATA *****/

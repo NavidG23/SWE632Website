@@ -1,9 +1,11 @@
 //** Uncomment this line to clear localStorage */
 //localStorage.clear();
 authenticate();
- $(document).ready(function(){
-    
+$(document).ready(function(){        
     $('#logOut').click(logOut);
+    //Set username field if logged in
+    var login = JSON.parse(localStorage.getItem('patriotWebLogin'));
+    $('#userName').text("Welcome " + login.userName + "!");
 });
 
 //Check to see if user is authenticated. If not redirect to login.html
