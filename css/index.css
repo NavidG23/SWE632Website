@@ -1,5 +1,5 @@
 body{
-    background-color: #006633;
+    background-color: white;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -177,10 +177,15 @@ footer {
     text-align: center;
 }
 
+
 .panel {
     border: 1px solid black;
     padding: 2em;
+    height:500px;
+    margin-top: 10%;
+
 }
+
 
 .gmu {
     margin-left: 40px;
@@ -309,4 +314,32 @@ tr:nth-child(even) {
 
 #searchList li a:hover:not(.header) {
  background-color: #eee;
+}
+
+
+.termpanel {
+   display: block;
+   background: white;
+   height:150px;
+   border: 1px solid black;
+   padding: 2em;
+}
+
+
+/*View Schedule*/
+.schedule{
+    background: white;
+    margin-left: 5%;
+    margin-right:5%;
+    margin-top:3%;
+    margin-bottom: 3%;
+}
+
+.termselector{
+    width:300px;
+    margin-left:45%;
+}
+
+.panelschedule{
+    background:white;
 }

@@ -64,13 +64,13 @@
 
 <div class="container-fluid bg1 text-center">
     <div class="row content">
-        <div class="row main">
+        <div class="col-md-1">
+        </div>
+        <div class="row main col-md-10">
             <div class="greetingHeader">Register For Class!</div>
             <div class="row rowContent">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-2">
-                    <div class="termpanel">
+
+                    <div class="termselector">
                         <p>Select a term:</p>
                         <select id="term" class="form-control" style="width:80%">
                             <option value="1">Fall 2018</option>
@@ -80,31 +80,34 @@
                         </select>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="panel" style= "overflow-y: scroll;height: 400px">
-                        <input type="text" id="myInput"  placeholder="Search for Subject..." title="Type in a field">      
-                        <div id="subjectSection"> 
-                            <h2>Subjects</h2>
-                            <ul id="searchList" class="subjects">
-                        </div>
-                        <br>
-                        <div id="coursesSection" style="display: none"> 
-                            <a href="#" id="backToSubjects">back</a>
-                            <h2>Courses</h2>
-                            <ul id="searchList" class="courses">
+                <div class="row main col-md-1">
+                </div>
+                <div class="row">
+                    <div  class="col-md-5">
+                        <div class = "panel" style= "overflow-y: scroll">
+                            <input type="text" id="myInput"  placeholder="Search for Subject..." title="Type in a field">      
+                            <div id="subjectSection"> 
+                                <h2>Subjects</h2>
+                                <ul id="searchList" class="subjects"></ul>
+                            </div>
+                            <br>
+                            <div id="coursesSection" style="display: none"> 
+                                <a href="#" id="backToSubjects">back</a>
+                                <h2>Courses</h2>
+                                <ul id="searchList" class="courses"></ul> 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="panel" style= "overflow-y: scroll;height: 400px;">
-                        <div id="coursesSelectionSection" style="display: none;"> 
-                            <h2>Sections</h2>
-                            <ul id="searchList" class="sections">
+                    <div class="col-md-5">
+                        <div class = "panel" style= "overflow-y: scroll">
+                            <div id="coursesSelectionSection" style="display: none;"> 
+                                <h2>Sections</h2>
+                                <ul id="searchList" class="sections"></ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 

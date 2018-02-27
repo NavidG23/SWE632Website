@@ -61,14 +61,13 @@
 </nav>
 
 <div class="container-fluid bg1 text-center">
-    <div class="row content">
-        <div class="row main">
+    <div class="row content" >
+        <div class="col-md-1">
+        </div>
+        <div class="row main col-md-10">
             <div class="greetingHeader">Student Schedule</div>
             <div class="row rowContent">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-3">
-                    <div class="termpanel">
+                    <div class="termselector">
                         <p>Select a term:</p>
                         <select id= "select01" class="form-control" style="width:80%">
                             <option value= "Fall18">Fall 2018</option>
@@ -77,19 +76,16 @@
                             <option value= "Fall17">Fall 2017</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="panel">
+
+                <div class="row main">
+                    <div  class="schedule">
                         <div class= "myClass" id="Fall18">
-                            <h2>Fall 2018</h2>
                             <p>No classes signed up for yet!</p>
                         </div>
                         <div class= "myClass" id="Summer18">
-                            <h2>Summer 2018</h2>
                             <p>No classes signed up for yet!</p>
                         </div>
                         <div class= "myClass" id="Spring18">
-                            <h2>Spring 2018</h2>
                             <table>
                               <tr>
                                 <th>CRN</th>
@@ -150,7 +146,6 @@
                             </table>
                         </div>
                         <div class= "myClass" id="Fall17">
-                            <h2>Fall 2017</h2>
                             <table>
                               <tr>
                                 <th>CRN</th>
