@@ -37,7 +37,8 @@ $(document).ready(function(){
     /**
      * Empties course and section data, returns back to original subject list.
      */
-    $('#backToSubjects').click(function(){
+    $('#backToSubjects').click(function(e){
+        e.preventDefault();
         $('.sections').empty();
         $(".courses").empty();
         $("#coursesSection").hide();
