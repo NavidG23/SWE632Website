@@ -3,6 +3,13 @@ $(document).ready(function(){
     for(i in subject){
         $(".subjects").append("<li class='subjectListing searchItems' value='"+ subject[i].id + "' </li><a href='#'>"+ subject[i].name +" ["+ subject[i].abbreviation + "]</a>");
     } 
+    
+    $('#term').change(function(){
+        $('#subjectSection').show();
+        $("#coursesSection").hide(); 
+        $("#coursesSelectionSection").hide(); 
+        
+    })
 
     $('.subjectListing').click(function(){
         var courses = getCoursesForSubject($(this).val());
