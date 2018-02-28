@@ -1,8 +1,14 @@
+/**
+ * Returns the subjects for the selected term.
+ * @param {Number} termId - The id of the selected term.
+ */
 function getSubjectsForTerm(termId){
     var subjects = [];
+    //Loop through subject-terms, which is a junction table for subject and term
     for(i in subjectTerm){
         if(subjectTerm[i].termId == termId){
-            var subId = subjectTerm[i].subjectId
+            var subId = subjectTerm[i].subjectId;
+            //loop through the subjects that belong to the term and check for matching ID
             for(j in subject){
                 if(subject[j].id == subId){
                     subjects.push(subject[j]);
@@ -10,9 +16,14 @@ function getSubjectsForTerm(termId){
             }
         }
     }
+
     return subjects;
 }
 
+/**
+ * Returns the courses for the selected subject.
+ * @param {Number} subjectId - The id of the subject selected.
+ */
 function getCoursesForSubject(subjectId){
     var courses = [];
     for(i in course){
@@ -20,9 +31,15 @@ function getCoursesForSubject(subjectId){
             courses.push(course[i]);
         }
     }
+    
     return courses;
 }
 
+/**
+ * Returns the sections that belong to the term and course identified.
+ * @param {Number} termId - The id of the selected term
+ * @param {Number} courseId - The id of the selected course
+ */
 function getSectionsByCourseAndTerm(termId, courseId){
     var sections = [];
     for(i in section){
@@ -69,10 +86,7 @@ var subject = [
             "id": 1,
             "name": "Software Engineering",
             "abbreviation": "SWE"
-        },
-        
-        
-         
+        },         
     ]
 
 var subjectTerm = [
