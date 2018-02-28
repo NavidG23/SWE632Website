@@ -30,10 +30,26 @@ $(document).ready(function(){
             $("#coursesSelectionSection").show();
             $(".sections").empty();
             for(i in sections){
-                $(".sections").append("<li class='sectionsListing' value='"+ sections[i].id + "' </li><a href='#'>"+ sections[i].timeslot +"</a>");
+                $(".sections").append("<li class='sectionsListing' value='"+ sections[i].id + "' </li><a href='#'>"+ " " + sections[i].days + " | " + sections[i].timeslot + " | " + sections[i].teacher + " | " + sections[i].location + " | " + sections[i].remainingseats + "</a>");
             }          
         });
     }
+    
+//    $(document).ready(function () {
+//        $.getJSON(url,
+//        function (json) {
+//            var tr;
+//            for (var i = 0; i < json.length; i++) {
+//                tr = $('<tr/>');
+//                tr.append("<td>" + sections[i].id + "</td>");
+//                tr.append("<td>" + sections[i].days + "</td>");
+//                tr.append("<td>" + sections[i].timeslot + "</td>");
+//                tr.append("<td>" + sections[i].location + "</td>");
+//                $('table').append(tr);
+//            }
+//        });
+//    });
+
 
     $('#backToSubjects').click(function(){
         $('.sections').empty();

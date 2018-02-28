@@ -32,6 +32,8 @@ function getSectionsByCourseAndTerm(termId, courseId){
     return sections;
 }
 
+
+
 /**** JSON MOCK DATA *****/
 
 var terms = [
@@ -354,20 +356,77 @@ var section = [
             "sec": 001,
             "courseId": 1,
             "termId": 1,
-            "timeslot": "4:30 - 7:10pm"
+            "days": "TR",
+            "timeslot": "10:30am - 11:45am",
+            "location": "Peterson 1105",
+            "teacher": "Jeff Offutt",
+            "remainingseats": "6",
+            
         },
         {
             "id": 2,
             "sec": 001,
             "courseId": 2,
             "termId": 1,
-            "timeslot": "4:30 - 7:10pm"
+            "days": "F",
+            "timeslot": "12:00pm - 1:15pm",
+            "location": "AB L008",
+            "teacher": "Jeff Offutt",
+            "remainingseats": "9",
         },
         {
             "id": 3,
             "sec": 001,
-            "courseId": 2,
-            "termId": 2,
-            "timeslot": "4:30 - 7:10pm"
+            "courseId": 3,
+            "termId": 1,
+            "days": "F",
+            "timeslot": "12:00pm- 1:15pm",
+            "location": "AB L008",
+            "teacher": "Jeff Offutt",
+            "remainingseats": "20",
+        },
+        {
+            "id": 4,
+            "sec": 001,
+            "courseId": 4,
+            "termId": 1,
+            "days": "M",
+            "timeslot": "4:30 - 7:10pm",
+            "location": "Merten 1200",
+            "teacher": "Jeff Offutt",
+            "remainingseats": "1",
+        },
+        {
+            "id": 5,
+            "sec": 001,
+            "courseId": 5,
+            "termId": 1,
+            "days": "R",
+            "timeslot": "7:20pm - 10:00pm",
+            "location": "Innovation Hall 134",
+            "teacher": "Yonghee Shin",
+            "remainingseats": "7",
+        },
+        {
+            "id": 6,
+            "sec": 001,
+            "courseId": 6,
+            "termId": 1,
+            "days": "T",
+            "timeslot": "7:20pm - 10:00pm",
+            "location": "Innovation Hall 136",
+            "teacher": "Laurel E. Fielding",
+            "remainingseats": "8",
+        },
+        {
+            "id": 7,
+            "sec": 001,
+            "courseId": 7,
+            "termId": 1,
+            "days": "W",
+            "timeslot": "4:30pm - 7:10pm",
+            "location": "Planetary Hall 224",
+            "teacher": "Robert Pettit",
+            "remainingseats": "5",
         }
     ]
