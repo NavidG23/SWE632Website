@@ -7,14 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
-=======
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="javascript/scripts/authenticate.js"></script>
     <!--Style of social media icons (had to take them out from separate css bc of malfunctioning)-->
->>>>>>> f0ca57801a433335fcf10d85989ed75f9663b098
     <style>
         .fa {
             padding: 20px 40px 20px 20px;
@@ -29,28 +25,6 @@
             opacity: 0.7;
         }
     </style>
-
-    <script>
-        $(document).ready(function(){
-            authenticate();
-        })
-
-        //Check to see if user is authenticated. If not redirect to login.html
-        //Authentication uses local storage, login token expires after 24 hours
-        function authenticate()
-        {
-            var now = new Date();
-            //Get login obj from local storage
-            var login = JSON.parse(localStorage.getItem('login')); 
-            //Check if login is null, if signedIn is false, and if login has expired (24 hours)
-            //If any are true, redirect to login
-            if(!login || login.signedIn == false || now > new Date(login.expireDate)) 
-            {
-                window.location.href = "login.html";
-            }
-            $('#userName').text(login.userName)
-        }
-    </script>
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -65,34 +39,6 @@
                 <span class="icon-bar"></span>
             </button>
         </div>
-<<<<<<< HEAD
-        <ul class="nav navbar-right" style="margin-right: 20px">
-            <span class=>Contact us | </span><a href="#">Logout</a>
-            <div>Welcome <span id="userName"></span></div>
-        </ul>
-    </div>
-</nav>
-<!-- 2nd navbar under first, used for links and search -->
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container-fluid">
-        <ul class="nav navbar nav-pills">
-            <li class="nav-item"><a href="register.html">Register for Classes</a></li>
-            <li class="nav-item"><a href="#">Account Details</a></li>
-            <li class="nav-item"><a href="#">View Schedule</a></li>
-            <li class="nav-item"><a href="#">Purchase Textbooks</a></li>
-            <li class="searchDiv"><input type="text" placeholder="Search.." name="search">
-                <button type="submit" disabled="disabled"><i class="fa fa-search"></i></button>
-            </li>
-        </ul>
-    </div>
-</nav>
-<!-- Main body -->
-<div class="row main">
-    <div class="col col-md-6 col col-md-offset-6">
-        <div class="row greeting">
-            <div style="font-size: 54px;">Welcome to Patriot Web!</div>
-            <div style="font-size: 18px; margin-left:10%">a self-service website for students, faculty, and staff</div>
-=======
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li><a href="html/register.html">Register For Classes</a></li>
@@ -108,7 +54,6 @@
                 <li><a><span id="userName"></span></a></li>
                 <li><a href="login.html" id="logOut"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
             </ul>
->>>>>>> f0ca57801a433335fcf10d85989ed75f9663b098
         </div>
     </div>
 </nav>
@@ -122,11 +67,90 @@
                     <div class="greetingMessage">a self-service website for students, faculty, and staff</div>
                 </div>
             </div>
+            
+<!--
+            <div class="row imageRow">
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <div class="container">
+                        <img src="images/personalinformationH.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                        <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <div class="container">
+                        <img src="images/studentservicesH.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                        <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <div class="container">
+                        <img src="images/financialaidH.jpg" alt="Avatar" class="image">
+                        <div class="overlay">
+                        <div class="text">Hello World</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+-->
+            
+            <div class="row imageRow">
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <img class="selectionImg img" src="images/personalinformationH.jpg">
+                    <div class="overlay">
+                        <a href = "html/personalinformation.html">
+                            <div class="text"><h2>Personal Information</h2> 
+                                <ol>
+                                    <li>View or update your address(es), phone number(s), and emergency contact information</li>
+                                    <li>View your e-mail address</li>
+                                    <li>View name change and social security number change information</li>
+                                </ol>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <a href="html/studentservices.html"><img class="selectionImg img" src="images/studentservicesH.jpg" alt="SS"></a>
+                    <div class="overlay">
+                        <a href="html/studentservices.html">
+                            <div class="text"><h2>Student Services</h2>
+                                <ol>
+                                    <li>Register</li>
+                                    <li>View your unofficial transcript</li>
+                                    <li>Order your official transcript</li>
+                                    <li>Review charges, payments, and 1098-T information</li>
+                                </ol>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-md-4 imageDiv">
+                    <a href="html/financialaid.html"><img class="selectionImg img" src="images/financialaidH.jpg" alt="FA"></a>
+                    <div class="overlay">
+                        <a href="html/financialaid.html">
+                            <div class="text"><h2>Financial Aid</h2>
+                                <ol>
+                                    <li>Apply for Financial Aid</li>
+                                    <li>Review the status of your financial aid applications</li>
+                                    <li>Check status of document requirements</li>
+                                    <li>Review loans</li>
+                                </ol>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            
+<!--
             <div class="row imageRow">
                 <div class="col-xs-12 col-md-4 imageDiv">
                     <div style="font-size: 28px;" class="visible-xs"> Personal Information</div>
                     <a href="html/personalinformation.html"><img id="imgPI" class="selectionImg" src="images/personalinformationH.jpg"></a>
-                    <div class="centered textPI">Student Services</div>
+                    <div class="centered textPI">Personal Information</div>
                 </div>
                 <div class="col-xs-12 col-md-4 imageDiv">
                         <div style="font-size: 28px;" class="visible-xs"> Student Services</div>
@@ -136,12 +160,11 @@
                 <div class="col-xs-12 col-md-4 imageDiv">
                         <div style="font-size: 28px;" class="visible-xs"> Financial Aid</div>
                     <a href="html/financialaid.html"><img id="imgFA" class="selectionImg" src="images/financialaidH.jpg" alt="FA"></a>
-                    <div class="centered textFA">Student Services</div>
-                </div>
-                    </div>
+                    <div class="centered textFA">Financial Aid</div>
                 </div>
             </div>
-        </div>
+-->
+                </div>
     </div>
 </div>
 <footer class="container-fluid footer">

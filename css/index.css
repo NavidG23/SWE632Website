@@ -40,20 +40,25 @@ footer {
 }
 
 /*Holds all image options in one container*/
+/*
 .bigcontainer {
     object-position: right;
     margin-top: -220px;
 }
+*/
 
 /*Overlay container*/
+/*
 .container {
     position: relative;
     left: 1100px;
     max-width: 300px;
     margin-bottom: 30px;
 }
+*/
 
 /*        button specs*/
+/*
 .container .btn {
     position: absolute;
     top: 50%;
@@ -69,13 +74,17 @@ footer {
     border-radius: 5px;
     text-align: center;
 }
+*/
 
 /*button color*/
+/*
 .container .btn:hover {
     background-color: black;
 }
+*/
 
 /*overlay specs*/
+/*
 .overlay {
     border-radius: 50%;
     position: absolute;
@@ -97,17 +106,20 @@ footer {
     transform: translate(-50%, -50%);
     color:transparent;
 }
+*/
 
+/*
 #textSS, #textFA, #textPI{
-
+    color:black;
 }
 
-/*Overlay opacity*/
+Overlay opacity
 #imgSS:hover,
 #imgFA:hover, 
 #imgPI:hover  {
     opacity: .5;
 }
+*/
 
 /*        Patriot web title*/
 .greetingHeader {
@@ -285,15 +297,60 @@ tr:nth-child(even) {
     margin-top:50px;
 }
 
+/*
 .imageDiv:hover > #textFA,
 .imageDiv:hover > #textSS,
 .imageDiv:hover > #textPI,
 {
     color:black;
 }
+*/
 
 .selectionImg{
     border-radius:50px;
     width:100%;
     margin-bottom:20px;
+}
+
+
+/*********Button Overlay*********/
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  border-radius:50px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+}
+
+.imageDiv:hover .overlay {
+  opacity: .6;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
