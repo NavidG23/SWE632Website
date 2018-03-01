@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="../javascript/scripts/authenticate.js"></script>
+    <script src="../javascript/scripts/classdatabase.js"></script>
 
     <!--    Style of social media Icons (had to take them out from separate css bc of malfunctioning-->
     <style>
@@ -61,30 +62,27 @@
 </nav>
 
 <div class="container-fluid bg1 text-center">
-    <div class="row content">
-        <div class="row main">
+    <div class="row content" >
             <div class="greetingHeader">Student Schedule</div>
             <div class="row rowContent">
-                <div class="col-md-1">
-                </div>
-                <div class="col-md-3">
-                    <div class="panel">
-                        <select id= "select01" class="form-control" style="width:80%">
-                            <option value= "Select">Select a Term...</option>
-                            <option value= "Summer">Summer 2018</option>
-                            <option value= "Spring">Spring 2018</option>
-                            <option value= "Fall">Fall 2017</option>
+                    <div class="termselector">
+                        <p>Select a term:</p>
+                        <select id= "select01" class="form-control">
+                            <option value= "Fall18">Fall 2018</option>
+                            <option value= "Summer18">Summer 2018</option>
+                            <option value= "Spring18">Spring 2018</option>
+                            <option value= "Fall17">Fall 2017</option>
                         </select>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="panel">
-                        <div class= "myClass" id="Summer">
-                            <h2>Summer 2018</h2>
+                <div class="row main">
+                    <div class="schedule">
+                        <div class= "myClass" id="Fall18">
                             <p>No classes signed up for yet!</p>
                         </div>
-                        <div class= "myClass" id="Spring">
-                            <h2>Spring 2018</h2>
+                        <div class= "myClass" id="Summer18">
+                            <p>No classes signed up for yet!</p>
+                        </div>
+                        <div class= "myClass" id="Spring18">
                             <table>
                               <tr>
                                 <th>CRN</th>
@@ -144,8 +142,7 @@
                               </tr>
                             </table>
                         </div>
-                        <div class= "myClass" id="Fall">
-                            <h2>Fall 2017</h2>
+                        <div class= "myClass" id="Fall17">
                             <table>
                               <tr>
                                 <th>CRN</th>
@@ -208,7 +205,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </div>
 </div>
 

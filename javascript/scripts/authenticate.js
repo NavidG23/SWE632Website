@@ -31,7 +31,7 @@ function logOut(){
 //Schedule funtion showing tables
 
 $(function () { 
-    $("#Select").show();
+    $("#Fall18").show();
 
     $("#select01").on("change", function () {
         $(".myClass").hide();
