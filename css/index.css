@@ -194,6 +194,15 @@ footer {
 
 }
 
+.otherpanel {
+    border: 1px solid black;
+    background: white;
+    padding: 2em;
+    height:500px;
+    margin-top: -5%;
+
+}
+
 
 .gmu {
     margin-left: 40px;
