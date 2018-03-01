@@ -1,3 +1,34 @@
+/******CODE FOR SCHEDULE SHOWER******/
+//$(function() {
+//    $('#Fall18b').hide(); 
+//    $('#Summer18b').hide(); 
+//    $('#Spring18b').hide(); 
+//    $('#Fall17b').hide(); 
+//    $('#type').change(function(){
+//        if($('#type').val() == 'Fall18') {
+//            $('#Fall18b').show(); 
+//        } 
+//        if($('#type').val() == 'Summer18') {
+//            $('#Summer18b').show(); 
+//        }
+//        if($('#type').val() == 'Spring18') {
+//            $('#Spring18b').show(); 
+//        }
+//        if($('#type').val() == 'Spring18') {
+//            $('#Fall17b').show(); 
+//        }
+//        else {
+//            $('#row_dim').hide(); 
+//        } 
+//    });
+//});
+
+//$(document).ready(function(){
+//    $('#selectID').val('Spring18').change();
+//});
+
+/**************/
+
 $(document).ready(function(){
     //Append the subjects to the subject list.
     for(i in subject){
