@@ -144,6 +144,7 @@ footer {
 }
 
 .bg1 {
+    min-height: 650px;
     position: center;
     padding-bottom: 70px;
     /*Needed for navbar-fixed-top*/
