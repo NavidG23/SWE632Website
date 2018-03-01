@@ -1,13 +1,15 @@
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
 body{
-/*    background-color: #ABEBC6;*/
-    
-/*        background-color: #82E0AA;*/
-    
-/*    background-color: #A9DFBF;*/
-    
-/*    background-color: #7DCEA0;*/
-    
     background-color: #B2BABB;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -43,7 +45,18 @@ footer {
     }
 
     .row.content {
-        height: auto;
+        height: 90%;
+    }
+
+    .footer {
+        background-color: #555;
+        color: white;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: center;
     }
 }
 
@@ -68,7 +81,7 @@ footer {
     height: auto;
 }
 
-/*        button specs*/
+/*button specs*/
 .container .btn {
     position: absolute;
     top: 50%;
@@ -110,17 +123,19 @@ footer {
     opacity: .7;
 }
 
-/*        Patriot web title*/
+/*Patriot web title*/
 .greetingHeader {
     font-size: 75px;
-    /*            font-family: URW Chancery L, cursive;*/
+    /*font-family: URW Chancery L, cursive;*/
     font-family: "Brush Script MT Bold", cursive;
+    color: #1b5e20;
 }
 
-/*        Text under Patriot web title*/
+/*Text under Patriot web title*/
 .greetingMessage {
     font-size: 25px;
     font-family: "Brush Script MT Bold", cursive;
+    color: #c49000;
 }
 
 .main {   
@@ -129,9 +144,12 @@ footer {
 }
 
 .bg1 {
-    min-height: 650px;
+    position: center;
     padding-bottom: 70px;
-    padding-top:175px; /*Needed for navbar-fixed-top*/
+    /*Needed for navbar-fixed-top*/
+    padding-top:175px;
+    width: 95%;
+    margin: 0 auto;
 }
 
 /*Overlay container*/
@@ -178,10 +196,14 @@ footer {
 }
 
 .footer {
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    background-color: #555;
     color: white;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
     text-align: center;
 }
 
@@ -208,55 +230,13 @@ footer {
     margin-left: 40px;
 }
 
-/*Social Media Icons*/
-/*
-.fa {
-  padding: 20px;
-  font-size: 20px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 4px;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-*/
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
-
 /*Footer*/
 .address {
     float: right;
+    text-align: right;
+    text-align: -moz-right;
+    text-align: -webkit-right;
+    font-size: small;
 /*    color:#9d9d9d;*/
 }
 
@@ -296,6 +276,35 @@ tr:nth-child(even) {
 }
 
 
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}
 
 /*Search bar*/
 * {
@@ -342,7 +351,6 @@ tr:nth-child(even) {
    border: 1px solid black;
    padding: 2em;
 }
-
 
 /*View Schedule*/
 .schedule{
