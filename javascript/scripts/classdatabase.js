@@ -32,7 +32,8 @@ $(document).ready(function(){
                 $(".courses").append("<li class='courseListing searchItems' value='"+ courses[i].id + "' </li><a href='#' class='courseListingLink'>"+ subjectAbbrevation + " " + courses[i].name +"</a>");
             }
         }
-        activateCourseListeners(); //Activate handlers for newly created course items.         
+        activateCourseListeners(); //Activate handlers for newly created course items.    
+        $('#myInput').attr("placeholder", "Search for Course...");     
     });
 
     /**
@@ -45,6 +46,7 @@ $(document).ready(function(){
         $("#coursesSection").hide();
         $('#subjectSection').show();
         $('#myInput').val('').trigger('input');        
+        $('#myInput').attr("placeholder", "Search for Subject...");     
     })
 
     /**
