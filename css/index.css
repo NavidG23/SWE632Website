@@ -445,9 +445,12 @@ tr:nth-child(even) {
 }
 
 .register_button {
-    background-color: #003300;
+    background-color: #1b5e20;
     color: white;
     border-radius: 10%;
+    padding: 8px;
+    font-family: "Arial Narrow", serif;
+    font-size: 16px;
 }
 
 .disabled {

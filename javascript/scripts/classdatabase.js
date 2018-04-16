@@ -89,7 +89,7 @@ function activateCourseListeners() {
             $(".sections").append("<li class='sectionsListing'><a>There are currently no sections available.</a></li>");
         } else {
             //For Table (header)
-            $(".sections").append("<tr><th>Day</th><th>Time</th><th>Instructor</th><th>Location</th><th>Rem Seats</th><th>Copy</th></tr>");
+            $(".sections").append("<tr><th>Day</th><th>Time</th><th>Instructor</th><th>Location</th><th>Rem Seats</th><th></th></tr>");
             //Go through selected sections and append them to the list.
             for (i in sections) {
                 //For Table (rows)
