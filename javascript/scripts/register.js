@@ -137,19 +137,19 @@ var course = [
         },
         {
             "id": 6,
-            "name": "619- Object-Oriented Software Specification and Construction",
+            "name": "619- Object-Oriented Software Specification and Construction<br>(Already Taken)",
             "code": 619,
             "subjectId": "1"
         },
         {
             "id": 7,
-            "name": "621- Software Modeling and Architectural Design",
+            "name": "621- Software Modeling and Architectural Design<br>(Already Taken)",
             "code": 621,
             "subjectId": "1"
         },
         {
             "id": 8,
-            "name": "622- Distributed Software Engineering",
+            "name": "622- Distributed Software Engineering<br>(Already Taken)",
             "code": 622,
             "subjectId": "1"
         },
@@ -162,19 +162,19 @@ var course = [
         },
         {
             "id": 10,
-            "name": "632- User Interface and Design",
+            "name": "632- User Interface and Design<br>(Already Taken)",
             "code": 632,
             "subjectId": "1"
         },
         {
             "id": 11,
-            "name": "637- Software Testing",
+            "name": "637- Software Testing<br>(Already Taken)",
             "code": 637,
             "subjectId": "1"
         },
         {
             "id": 12,
-            "name": "642- Software Engineering for WWW",
+            "name": "642- Software Engineering for WWW<br>(Already Taken)",
             "code": 642,
             "subjectId": "1"
         },

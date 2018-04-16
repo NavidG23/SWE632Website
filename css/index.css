@@ -367,6 +367,17 @@ tr:nth-child(even) {
  display: block
 }
 
+#searchListAlreadyTakenClasses li a {
+ border: 1px solid #ddd;
+ margin-top: -1px; /* Prevent double borders */
+ background-color: red;
+ padding: 12px;
+ text-decoration: none;
+ font-size: 18px;
+ color: black;
+ display: block
+}
+
 #searchList li a:hover:not(.header) {
  background-color: #eee;
 }
