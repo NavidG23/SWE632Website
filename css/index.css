@@ -186,7 +186,7 @@ footer {
     -o-transition: background-color .5s ease;
     transition: background-color .5s ease;
     -webkit-filter: blur(4px);
-    -ms-filter:blur(4px);
+    -ms-filter: blur(4px);
     filter: blur(4px);
     opacity: 0.4;
     backface-visibility: hidden;
@@ -392,14 +392,14 @@ tr:nth-child(even) {
 }
 
 #searchListAlreadyTakenClasses li a {
- border: 1px solid #ddd;
- margin-top: -1px; /* Prevent double borders */
- background-color: red;
- padding: 12px;
- text-decoration: none;
- font-size: 18px;
- color: black;
- display: block
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: red;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
 }
 
 #searchList li a:hover:not(.header) {
@@ -444,13 +444,14 @@ tr:nth-child(even) {
     background-color: #ffff99 !important;
 }
 
-.button {
+.register_button {
     background-color: #003300;
     color: white;
+    border-radius: 10%;
 }
 
 .disabled {
-    color: #1b5e20  !important;
+    color: #1b5e20 !important;
     font-style: oblique !important;
     font-weight: bold !important;
 }

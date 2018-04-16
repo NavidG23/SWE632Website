@@ -96,7 +96,7 @@ function activateCourseListeners() {
                 $(".sections").append("<tr><td>" + sections[i].days +
                     "</td><td>" + sections[i].timeslot + "</td><td>" + sections[i].teacher + "</td><td>" +
                     sections[i].location + "</td><td>" + sections[i].remainingseats +
-                    "</td><td><button class='copy' data-key=" + (i + 1) + ">Copy</button></td></tr>");
+                    "</td><td><button class='copy register_button' data-key=" + (i + 1) + ">Copy</button></td></tr>");
 
                 $('button.copy').on('click', function () {
                     var cRow = $(this).parents('tr');
