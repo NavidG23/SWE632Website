@@ -21,7 +21,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #fbc02d; /* <—– change your color here*/
+    color: #fbc02d;
     background-color: transparent;
 }
 
