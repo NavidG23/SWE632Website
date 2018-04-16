@@ -29,7 +29,13 @@ $(document).ready(function () {
             $(".courses").append("<li class='courseListing'><a>There are currently no courses available.</a></li>");
         } else {
             for (i in courses) {
-                $(".courses").append("<li class='courseListing searchItems' value='" + courses[i].id + "' </li><a href='#' class='courseListingLink'>" + subjectAbbrevation + " " + courses[i].name + "</a>");
+                if (courses[i].name.includes("Already Taken")) {
+                    $(".courses").append("<li class='courseListing searchItems' value='" + courses[i].id +
+                        "' </li><a href='#' class='courseListingLink disabled'>" + subjectAbbrevation + " " + courses[i].name + "</a>");
+                } else {
+                    $(".courses").append("<li class='courseListing searchItems' value='" + courses[i].id +
+                        "' </li><a href='#' class='courseListingLink'>" + subjectAbbrevation + " " + courses[i].name + "</a>");
+                }
             }
         }
         activateCourseListeners(); //Activate handlers for newly created course items.    
@@ -106,7 +112,7 @@ function activateCourseListeners() {
                 });
 
                 function doCopy(selectedCourse, selectedSubject, day, time, instructor, location, key) {
-                    copyToClipboard("Subject: " +selectedSubject + " " + selectedCourse + "\n"
+                    copyToClipboard("Subject: " + selectedSubject + " " + selectedCourse + "\n"
                         + "Day of Week: " + day + "\n"
                         + "Time of Day: " + time + "\n"
                         + "Instructor: " + instructor + "\n"
