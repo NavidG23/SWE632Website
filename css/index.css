@@ -298,6 +298,7 @@ tr:nth-child(even) {
 
 .myClass {
     display: none;
+    height: 150px;
 }
 
 #userName {
