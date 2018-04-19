@@ -20,8 +20,9 @@ $(document).ready(function () {
         e.preventDefault(); //Page won't jump to top
         var courses = getCoursesForSubject($(this).val());
         var subjectAbbrevation = $(this).attr('abbrev');
-        $('#subjectSection').hide();
-        $("#coursesSection").show();
+        $('#subjectSection, #subjectHeader').hide();
+        $("#coursesSection, #coursesHeader").show();
+        $('#backToSubjects').show();
         $(".courses").empty();
         //Add courses to the list
         if (courses.length == 0) {
@@ -47,10 +48,11 @@ $(document).ready(function () {
      */
     $('#backToSubjects').on('click', function (e) {
         e.preventDefault();
+        $(this).hide();
         $('.sections').empty();
         $(".courses").empty();
-        $("#coursesSection").hide();
-        $('#subjectSection').show();
+        $("#coursesSection, #coursesHeader").hide();
+        $('#subjectSection, #subjectHeader').show();
         $('#myInput').val('').trigger('input');
         $('#myInput').attr("placeholder", "Search for Subject...");
     })

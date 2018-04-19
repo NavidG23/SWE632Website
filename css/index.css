@@ -251,6 +251,10 @@ footer {
 
 }
 
+.panel.registerPanel {
+    height:500px;
+}
+
 .otherpanel {
     border: 1px solid black;
     background: white;
@@ -440,7 +444,7 @@ tr:nth-child(even) {
 }
 
 .highlight {
-    background-color: #ffff99 !important;
+    background-color: #fbc02d !important;
 }
 
 .register_button {
@@ -456,5 +460,13 @@ tr:nth-child(even) {
     color: #1b5e20 !important;
     font-style: oblique !important;
     font-weight: bold !important;
+}
+
+.registerSection h3{
+    font-weight: bold;
+}
+
+.navbar, .footer {
+    font-family: "Brush Script MT Bold", cursive;
 }
 

@@ -60,31 +60,32 @@
             </select>
         </div>
     </div>
-    <div class="row">
+    <div class="row registerSection">
         <!-- Subject/Course Panel  -->
         <div  class="col-md-6">
-            <div class = "panel">
+            <div class = "panel registerPanel">    
+                <!-- Headers-->
+                <h3 id="subjectHeader">Subjects</h3>
+                <h3 id="coursesHeader" style="display:none">Courses</h3>
+                <a href="#" id="backToSubjects" style="display:none">back</a>
                 <!-- Search Bar -->
                 <input type="text" id="myInput" placeholder="Search for Subject..." title="Type in a field">  
-                <!-- Subjects -->    
-                <div id="subjectSection"> 
-                    <h2>Subjects</h2>
+                <!-- Subjects -->  
+                <div id="subjectSection">
                     <ul id="searchList" class="subjects"></ul>
                 </div>
                 <br>
-                <!-- Courses -->
+                <!-- Courses -->                                                
                 <div id="coursesSection" style="display: none"> 
-                    <a href="#" id="backToSubjects">back</a>
-                    <h2>Courses</h2>
                     <ul id="searchList" class="courses"></ul> 
                 </div>
             </div>
         </div>
         <!-- Sections Panel-->
         <div class="col-md-6">
-            <div class = "panel">
+            <div class = "panel registerPanel">
                 <div id="coursesSelectionSection"> 
-                    <h2>Sections</h2>
+                    <h3>Sections</h3>
                     <!-- For Table -->
                     <table id="searchList" class="sections"></table>
                     <!-- For List <ul id="searchList" class="sections"></ul> -->
