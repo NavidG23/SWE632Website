@@ -112,8 +112,7 @@ footer {
 /*Patriot web title*/
 .greetingHeader {
     font-size: 75px;
-    /*font-family: URW Chancery L, cursive;*/
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Brush Script MT Bold";
     color: #1b5e20;
 }
 
@@ -467,6 +466,6 @@ tr:nth-child(even) {
 }
 
 .navbar, .footer {
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Brush Script MT Bold";
 }
 
