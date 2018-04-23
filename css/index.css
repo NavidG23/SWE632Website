@@ -112,15 +112,14 @@ footer {
 /*Patriot web title*/
 .greetingHeader {
     font-size: 75px;
-    /*font-family: URW Chancery L, cursive;*/
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Arial Narrow", serif;
     color: #1b5e20;
 }
 
 /*Text under Patriot web title*/
 .greetingMessage {
     font-size: 25px;
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Arial Narrow", serif;
     color: #c49000;
 }
 
@@ -226,7 +225,7 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: larger;
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Arial Narrow", serif;
     padding-top: 10px;
 }
 
@@ -249,6 +248,10 @@ footer {
     margin-top: 10%;
     overflow-y: scroll;
 
+}
+
+.panel.registerPanel {
+    height:500px;
 }
 
 .otherpanel {
@@ -440,7 +443,7 @@ tr:nth-child(even) {
 }
 
 .highlight {
-    background-color: #ffff99 !important;
+    background-color: #fbc02d !important;
 }
 
 .register_button {
@@ -456,5 +459,15 @@ tr:nth-child(even) {
     color: #1b5e20 !important;
     font-style: oblique !important;
     font-weight: bold !important;
+}
+
+.registerSection h3{
+    font-weight: bold;
+    font-size:28px;
+    font-family: "Arial Narrow", serif;
+}
+
+.navbar, .footer {
+    font-family: "Arial Narrow", serif;
 }
 
