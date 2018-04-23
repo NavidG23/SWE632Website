@@ -170,8 +170,7 @@ footer {
 
 .greeting {
     color: #FFCC33;
-    /* font-family:"Brush Script MT Bold", cursive; */
-    font-family: URW Chancery L, cursive;
+    font-family: "URW Chancery L", "Sans-serif";
     text-align: right;
     margin-right: 5%;
 }

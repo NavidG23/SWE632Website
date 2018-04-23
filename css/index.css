@@ -112,14 +112,14 @@ footer {
 /*Patriot web title*/
 .greetingHeader {
     font-size: 75px;
-    font-family: "Brush Script MT Bold";
+    font-family: "Arial Narrow", serif;
     color: #1b5e20;
 }
 
 /*Text under Patriot web title*/
 .greetingMessage {
     font-size: 25px;
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Arial Narrow", serif;
     color: #c49000;
 }
 
@@ -225,7 +225,7 @@ footer {
     text-align: center;
     font-weight: bold;
     font-size: larger;
-    font-family: "Brush Script MT Bold", cursive;
+    font-family: "Arial Narrow", serif;
     padding-top: 10px;
 }
 
@@ -464,9 +464,10 @@ tr:nth-child(even) {
 .registerSection h3{
     font-weight: bold;
     font-size:28px;
+    font-family: "Arial Narrow", serif;
 }
 
 .navbar, .footer {
-    font-family: "Brush Script MT Bold";
+    font-family: "Arial Narrow", serif;
 }
 
