@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Patriot Web Login</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -36,10 +36,10 @@
             background-color: #ffd740;
             color: black;
             padding: 10px;
-            margin: 10px;
+            margin: 10px 20px 10px 10px;
             width: 150px;
             align-items: right;
-            border-radius: 25px;
+            border-radius: 5px;
         }
 
         .submit-button:hover {
@@ -56,6 +56,7 @@
         .header-label {
             color: #c8a600;
             font-size: 54px;
+            text-align: center;
         }
 
         @media screen and (max-width: 767px) {
@@ -72,21 +73,28 @@
                 background-color: #003300;
                 color: white;
             }
-            
+
             .div-button {
-            position: relative;
-                right:21px;
+                position: relative;
+                right: 21px;
 
             }
+
             .submit-button {
-            background-color: #ffd740;
-            color: black;
-            padding: 8px;
-            margin: 20px;
-            width: 100%;
-            border-radius: 5px;
-        }
-            
+                background-color: #ffd740;
+                color: black;
+                padding: 8px;
+                margin: 20px;
+                width: 100%;
+                border-radius: 5px;
+            }
+
+            .header-label {
+                color: #c8a600;
+                font-size: 54px;
+                text-align: center;
+            }
+
         }
 
     </style>
@@ -105,11 +113,13 @@
             <form>
                 <div class="row form-group">
                     <label class="col col-xs-2" for="inputUsername">Mason NetID</label>
-                    <input type="text" class="col col-xs-6 form-control" id="inputUsername" placeholder="Enter your Mason NetID here">
+                    <input type="text" class="col col-xs-6 form-control" id="inputUsername"
+                           placeholder="Enter your Mason NetID here">
                 </div>
                 <div class="row form-group">
                     <label class="col col-xs-2" for="inputPassword">Password</label>
-                    <input type="password" class="col col-xs-6 form-control" id="inputPassword" placeholder="Enter your password here">
+                    <input type="password" class="col col-xs-6 form-control" id="inputPassword"
+                           placeholder="Enter your password here">
                 </div>
                 <div class="row div-button">
                     <input type="button" class="col col-xs-2 btn btn-primary submit-button" value="Login"/>
