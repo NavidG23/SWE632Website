@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding-bottom: 6rem;
     min-height: 100%;
+    font-family: "Arial Narrow", serif;
 }
 
 /* Remove the navbar's default margin-bottom and rounded borders */
@@ -428,6 +429,8 @@ tr:nth-child(even) {
 .schedule {
     background: white;
     margin: 3% 5%;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .termselector {
@@ -634,13 +637,14 @@ tr:nth-child(even) {
     left: 5%;
     width: 90%;
     height: auto;
-    background: #003300;
-    color: whitesmoke;
+    background: whitesmoke;
+    color: #003300;
     border-radius: 10px;
     overflow: hidden;
     margin: auto;
     font-family: "Arial Narrow", serif;
     padding: 16px;
+    border: 1px solid black;
 }
 
 .studentservices-content p {
@@ -673,7 +677,34 @@ table#t01 th {
     background-color: #c49000;
 }
 
-.studentservices-content button {
+.studentservices-content-button, .studentservices-content-button a {
+    background-color: #003300;
+    color: whitesmoke;
+    padding: 8px;
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.studentservices-content-button:hover,
+.studentservices-content-button a:hover {
     background-color: #9d9d9d;
-    color: ghostwhite;
+    color: #003300;
+}
+
+
+table#t02 {
+    width: 90%;
+    background-color: #f1f1c1;
+}
+
+table#t02 tr:nth-child(odd), tr:nth-child(even) {
+    background-color: whitesmoke;
+    color: black;
+}
+
+table#t02 th {
+    color: whitesmoke;
+    background-color: #003300;
 }
