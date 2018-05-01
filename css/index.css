@@ -475,3 +475,205 @@ tr:nth-child(even) {
     font-family: "Arial Narrow", serif;
 }
 
+.personalinformation {
+    width: 33%;
+    background: #003300;
+    color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 18px;
+    font-family: "Arial Narrow", serif;
+}
+
+.info-header {
+    position: relative;
+    overflow: hidden;
+}
+
+.info-header img {
+    height: 85px;
+    width: 85px;
+    border-radius: 50%;
+    margin: 16px 40px;
+    float: left;
+}
+
+.info-header h2 {
+    font-weight: lighter;
+    font-size: 28px;
+    display: flex;
+    float: left;
+    text-align: center;
+    line-height: 100%;
+    margin: 40px 10px;
+}
+
+.personalinformation_divider {
+    height: 2px;
+    background-color: #c49000;
+    margin: 10px;
+}
+
+.primaryaddress {
+    overflow: hidden;
+    margin: 16px 8px 8px;
+    align-items: center;
+}
+
+.primaryaddress img {
+    height: 40px;
+    width: 40px;
+    float: left;
+}
+
+.primaryaddress p {
+    font-size: 18px;
+    float: left;
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+}
+
+.primaryphone {
+    overflow: hidden;
+    margin: 16px 8px 8px;
+    align-items: center;
+}
+
+.primaryphone img {
+    height: 25px;
+    width: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.primaryphone p {
+    font-size: 18px;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+.primaryemail {
+    overflow: hidden;
+    margin: 16px 8px 8px;
+    align-items: center;
+}
+
+.primaryemail img {
+    height: 20px;
+    width: 25px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 8px;
+}
+
+.primaryemail p {
+    font-size: 18px;
+    float: left;
+}
+
+.classifications {
+    overflow: hidden;
+    margin: 16px 8px 8px;
+    align-items: center;
+}
+
+.classifications p {
+    font-size: 18px;
+    margin-left: 25px;
+    margin-right: 8px;
+}
+
+.item {
+    float: left;
+}
+
+.itemdetail {
+    float: right;
+    padding-right: 8px;
+    color: #fbc02d;
+}
+
+.additionalinformation {
+    width: 60%;
+    background: #003300;
+    color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 18px;
+    font-family: "Arial Narrow", serif;
+}
+
+.additionalinformation h1 {
+    font-size: 28px;
+    margin-left: 25px;
+}
+
+.additionalinformation li {
+    font-size: 18px;
+}
+
+.additionalinformation a {
+    color: whitesmoke;
+}
+
+.additionalinformation a:hover {
+    color: #c49000;
+}
+
+.additional-address-type {
+    font-size: 16px;
+    color: #fbc02d;
+    padding-left: 20px;
+}
+
+.studentservices-content {
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: auto;
+    background: #003300;
+    color: whitesmoke;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: auto;
+    font-family: "Arial Narrow", serif;
+    padding: 16px;
+}
+
+.studentservices-content p {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.studentservices-content table, th, td {
+    border: 1px solid #003300;
+    border-collapse: collapse;
+}
+
+.studentservices-content th, td {
+    padding: 16px 8px;
+}
+
+table#t01 {
+    width: 100%;
+    background-color: #f1f1c1;
+    margin-top: 16px;
+}
+
+table#t01 tr:nth-child(odd), tr:nth-child(even) {
+    background-color: lightgray;
+    color: #003300;
+}
+
+table#t01 th {
+    color: black;
+    background-color: #c49000;
+}
+
+.studentservices-content button {
+    background-color: #9d9d9d;
+    color: ghostwhite;
+}
