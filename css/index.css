@@ -114,7 +114,7 @@ footer {
 .greetingHeader {
     font-size: 75px;
     font-family: "Arial Narrow", serif;
-    color: #1b5e20;
+    color: #196F3D;
 }
 
 /*Text under Patriot web title*/
@@ -632,7 +632,7 @@ tr:nth-child(even) {
     padding-left: 20px;
 }
 
-.studentservices-content {
+.panel-content {
     top: 50%;
     left: 5%;
     width: 90%;
@@ -646,7 +646,6 @@ tr:nth-child(even) {
     padding: 16px;
     border: 1px solid black;
 }
-
 .studentservices-content p {
     font-size: 18px;
     margin-right: 8px;
@@ -673,8 +672,8 @@ table#t01 tr:nth-child(odd), tr:nth-child(even) {
 }
 
 table#t01 th {
-    color: black;
-    background-color: #c49000;
+    color: whitesmoke;
+    background-color: #196F3D;
 }
 
 .studentservices-content-button, .studentservices-content-button a {
@@ -706,5 +705,5 @@ table#t02 tr:nth-child(odd), tr:nth-child(even) {
 
 table#t02 th {
     color: whitesmoke;
-    background-color: #003300;
+    background-color: #196F3D;
 }
