@@ -18,6 +18,7 @@ $(document).ready(function () {
      */
     $('.subjectListing').on('click', function (e) {
         e.preventDefault(); //Page won't jump to top
+        $('#myInput').val('');
         var courses = getCoursesForSubject($(this).val());
         var subjectAbbrevation = $(this).attr('abbrev');
         $('#subjectSection, #subjectHeader').hide();
@@ -49,6 +50,7 @@ $(document).ready(function () {
     $('#backToSubjects').on('click', function (e) {
         e.preventDefault();
         $(this).hide();
+        $('#myInput').val('');
         $('.sections').empty();
         $(".courses").empty();
         $("#coursesSection, #coursesHeader").hide();
