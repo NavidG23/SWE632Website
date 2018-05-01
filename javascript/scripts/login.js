@@ -18,6 +18,7 @@ function logIn() {
         //Redirect to index
         window.location.href = "index.html";
     } else {
+        $("#invalidInputModal").modal();
         var isActive = $('.submit-button').is(":focus");
         if (isActive) {
             $('.submit-button').blur();
@@ -40,7 +41,6 @@ function isEmpty(id, pwd) {
     var username = id.trim();
     var password = pwd.trim();
     if (username === '' || username == null || password === '' || password == null) {
-        alert("Invalid input. Please enter a valid MasonId and Password");
         return true;
     } else {
         return false;
